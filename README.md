@@ -133,6 +133,7 @@ Note that for my iPad mini 4 Wi-Fi, there is no baseband. If you're using someth
 
 ## How It Works
 I'm planning to release a writeup to explain how it works.
+See the [How It Works](How_it_works.md) file.
 
 ## Credits
 
