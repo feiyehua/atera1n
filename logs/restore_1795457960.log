@@ -1,0 +1,484 @@
+02:19:20.902    <Info> idevicerestore 1.0.0-git-5815eed (libirecovery 1.3.1, libtatsu 1.1.0)
+02:19:20.909    <Info> Found device in Recovery mode
+02:19:20.910    <Info> ECID: 5142180066235430
+02:19:20.910    <Info> Identified device as j96ap, iPad5,1
+02:19:20.910    <Info> Device Product Version: N/A
+02:19:20.910    <Info> Device Product Build: N/A
+02:19:20.910    <Info> Extracting BuildManifest from IPSW
+02:19:20.916    <Info> IPSW Product Version: 11.4
+02:19:20.916    <Info> IPSW Product Build: 15F79 Major: 15
+02:19:20.916    <Info> INFO: device serial number is F9FQD42Y****
+02:19:20.916    <Info> Device supports Image4: true
+02:19:20.916    <Info> Variant: Customer Erase Install (IPSW)
+02:19:20.916    <Info> This restore will erase all device data.
+02:19:23.020    <Info> Checking IPSW for required components...
+02:19:23.022    <Info> All required components found in IPSW
+02:19:23.022    <Info> Getting ApNonce in Recovery mode... a1 42 d5 49 48 9f fe ab 9a 38 d3 fe 28 5d ec df 63 e6 e1 e9
+02:19:23.023    <Info> Using supplied ApTicket for restore personalization
+02:19:23.023    <Info> Extracting iBEC.ipad5.RELEASE.im4p (Firmware/dfu/iBEC.ipad5.RELEASE.im4p)...
+02:19:23.024    <Info> Personalizing IMG4 component iBEC...
+02:19:23.024    <Info> Sending iBEC (727221 bytes)...
+02:19:27.593    <Info> Recovery Mode Environment:
+02:19:27.596    <Info> iBoot build-version=iBoot-4076.60.11
+02:19:27.598    <Info> iBoot build-style=RELEASE
+02:19:27.609    <Info> Sending RestoreLogo...
+02:19:27.609    <Info> Extracting applelogo@2x~ipad.im4p (Firmware/all_flash/applelogo@2x~ipad.im4p)...
+02:19:27.610    <Info> Personalizing IMG4 component RestoreLogo...
+02:19:27.610    <Info> Sending RestoreLogo (23186 bytes)...
+02:19:27.633    <Info> ramdisk-size=0x20000000
+02:19:27.633    <Info> Extracting 048-10014-091.dmg (048-10014-091.dmg)...
+02:19:27.742    <Info> Personalizing IMG4 component RestoreRamDisk...
+02:19:27.747    <Info> Sending RestoreRamDisk (79318515 bytes)...
+02:19:32.295    <Info> Extracting DeviceTree.j96ap.im4p (Firmware/all_flash/DeviceTree.j96ap.im4p)...
+02:19:32.300    <Info> Personalizing IMG4 component RestoreDeviceTree...
+02:19:32.300    <Info> Sending RestoreDeviceTree (136113 bytes)...
+02:19:32.314    <Info> Extracting sep-firmware.j96.RELEASE.im4p (Firmware/all_flash/sep-firmware.j96.RELEASE.im4p)...
+02:19:32.319    <Info> Personalizing IMG4 component RestoreSEP...
+02:19:32.320    <Info> Sending RestoreSEP (2659942 bytes)...
+02:19:32.395    <Info> Extracting kernelcache.release.ipad5 (kernelcache.release.ipad5)...
+02:19:32.445    <Info> Personalizing IMG4 component RestoreKernelCache...
+02:19:32.447    <Info> Sending RestoreKernelCache (14343039 bytes)...
+02:19:34.048    <Info> Waiting for device to enter restore mode...
+02:19:38.489    <Info> About to restore device... 
+02:19:38.496    <Info> Connecting now...
+02:19:38.500    <Info> Connected to com.apple.mobile.restored, version 15
+02:19:38.500    <Info> Device df4c21b422bd66cbfada8d24daf36d6114e5c45f has successfully entered restore mode
+02:19:38.503    <Info> Hardware Information:
+02:19:38.503    <Info> BoardID: 8
+02:19:38.503    <Info> ChipID: 28672
+02:19:38.503    <Info> UniqueChipID: 5142180066235430
+02:19:38.503    <Info> ProductionMode: true
+02:19:38.504    <Info> Starting Reverse Proxy
+02:19:38.584 <Verbose> ReverseProxy[Ctrl]: (status=1) Ready
+02:19:38.584    <Info> Device will not use nonce slots.
+02:19:38.635 <Verbose> Checkpoint completed id: 0x655 (unknown) result=0
+02:19:38.639 <Verbose> Checkpoint started   id: 0x604 (unknown)
+02:19:38.646 <Verbose> Checkpoint completed id: 0x604 (unknown) result=0
+02:19:38.650 <Verbose> Checkpoint started   id: 0x608 (unknown)
+02:19:38.656 <Verbose> Checkpoint completed id: 0x608 (unknown) result=0
+02:19:38.661 <Verbose> Checkpoint started   id: 0x609 (unknown)
+02:19:38.666    <Info> About to send NORData...
+02:19:38.666    <Info> Found firmware path Firmware/all_flash
+02:19:38.666    <Info> Getting firmware manifest from build identity
+02:19:38.666    <Info> Extracting LLB.ipad5.RELEASE.im4p (Firmware/all_flash/LLB.ipad5.RELEASE.im4p)...
+02:19:38.667    <Info> Personalizing IMG4 component LLB...
+02:19:38.667    <Info> Extracting applelogo@2x~ipad.im4p (Firmware/all_flash/applelogo@2x~ipad.im4p)...
+02:19:38.667    <Info> Personalizing IMG4 component AppleLogo...
+02:19:38.667    <Info> Extracting batterycharging0@2x~ipad.im4p (Firmware/all_flash/batterycharging0@2x~ipad.im4p)...
+02:19:38.668    <Info> Personalizing IMG4 component BatteryCharging0...
+02:19:38.668    <Info> Extracting batterycharging1@2x~ipad.im4p (Firmware/all_flash/batterycharging1@2x~ipad.im4p)...
+02:19:38.668    <Info> Personalizing IMG4 component BatteryCharging1...
+02:19:38.668    <Info> Extracting batteryfull@2x~ipad.im4p (Firmware/all_flash/batteryfull@2x~ipad.im4p)...
+02:19:38.669    <Info> Personalizing IMG4 component BatteryFull...
+02:19:38.669    <Info> Extracting batterylow0@2x~ipad.im4p (Firmware/all_flash/batterylow0@2x~ipad.im4p)...
+02:19:38.669    <Info> Personalizing IMG4 component BatteryLow0...
+02:19:38.669    <Info> Extracting batterylow1@2x~ipad.im4p (Firmware/all_flash/batterylow1@2x~ipad.im4p)...
+02:19:38.669    <Info> Personalizing IMG4 component BatteryLow1...
+02:19:38.669    <Info> Extracting glyphplugin@2x~ipad-lightning.im4p (Firmware/all_flash/glyphplugin@2x~ipad-lightning.im4p)...
+02:19:38.669    <Info> Personalizing IMG4 component BatteryPlugin...
+02:19:38.669    <Info> Extracting DeviceTree.j96ap.im4p (Firmware/all_flash/DeviceTree.j96ap.im4p)...
+02:19:38.670    <Info> Personalizing IMG4 component DeviceTree...
+02:19:38.670    <Info> Extracting recoverymode@2x~ipad-lightning.im4p (Firmware/all_flash/recoverymode@2x~ipad-lightning.im4p)...
+02:19:38.671    <Info> Personalizing IMG4 component RecoveryMode...
+02:19:38.671    <Info> Extracting iBoot.ipad5.RELEASE.im4p (Firmware/all_flash/iBoot.ipad5.RELEASE.im4p)...
+02:19:38.672    <Info> Personalizing IMG4 component iBoot...
+02:19:38.672    <Info> Extracting sep-firmware.j96.RELEASE.im4p (Firmware/all_flash/sep-firmware.j96.RELEASE.im4p)...
+02:19:38.674    <Info> Personalizing IMG4 component RestoreSEP...
+02:19:38.674    <Info> Extracting sep-firmware.j96.RELEASE.im4p (Firmware/all_flash/sep-firmware.j96.RELEASE.im4p)...
+02:19:38.675    <Info> Personalizing IMG4 component SEP...
+02:19:38.675    <Info> Sending NORData now...
+02:19:38.957    <Info> Done sending NORData
+02:19:40.139 <Verbose> Checkpoint completed id: 0x609 (unknown) result=0
+02:19:40.141 <Verbose> Checkpoint started   id: 0x60B (unknown)
+02:19:40.142    <Info> About to send RootTicket...
+02:19:40.142    <Info> Sending RootTicket now...
+02:19:40.142    <Info> Done sending RootTicket
+02:19:40.149 <Verbose> Checkpoint completed id: 0x60B (unknown) result=0
+02:19:40.151 <Verbose> Checkpoint started   id: 0x60D (unknown)
+02:19:40.153    <Info> Waiting for NAND (28)
+02:19:40.159 <Verbose> Checkpoint completed id: 0x60D (unknown) result=0
+02:19:40.161 <Verbose> Checkpoint started   id: 0x60E (unknown)
+02:19:40.164 <Verbose> Checkpoint completed id: 0x60E (unknown) result=0
+02:19:40.167 <Verbose> Checkpoint started   id: 0x60F (unknown)
+02:19:40.191 <Verbose> Checkpoint completed id: 0x60F (unknown) result=0
+02:19:40.195 <Verbose> Checkpoint started   id: 0x65C (unknown)
+02:19:40.219 <Verbose> Checkpoint completed id: 0x65C (unknown) result=0
+02:19:40.222 <Verbose> Checkpoint started   id: 0x610 (unknown)
+02:19:40.230 <Verbose> Checkpoint completed id: 0x610 (unknown) result=0
+02:19:40.233 <Verbose> Checkpoint started   id: 0x611 (unknown)
+02:19:40.328 <Verbose> Checkpoint completed id: 0x611 (unknown) result=0
+02:19:40.333 <Verbose> Checkpoint started   id: 0x612 (unknown)
+02:19:40.352 <Verbose> Checkpoint completed id: 0x612 (unknown) result=0
+02:19:40.357 <Verbose> Checkpoint started   id: 0x613 (unknown)
+02:19:40.371 <Verbose> Checkpoint completed id: 0x613 (unknown) result=0
+02:19:40.376 <Verbose> Checkpoint started   id: 0x665 (unknown)
+02:19:40.378    <Info> Checking filesystems (15)
+02:19:40.454 <Verbose> Checkpoint completed id: 0x665 (unknown) result=0
+02:19:40.456 <Verbose> Checkpoint started   id: 0x614 (unknown)
+02:19:40.457    <Info> Checking filesystems (15)
+02:19:41.699 <Verbose> Checkpoint completed id: 0x614 (unknown) result=0
+02:19:41.706 <Verbose> Checkpoint started   id: 0x654 (unknown)
+02:19:41.714 <Verbose> Checkpoint completed id: 0x654 (unknown) result=0
+02:19:41.724 <Verbose> Checkpoint started   id: 0x615 (unknown)
+02:19:41.735 <Verbose> Checkpoint completed id: 0x615 (unknown) result=0
+02:19:41.744 <Verbose> Checkpoint started   id: 0x616 (unknown)
+02:19:43.381    <Info> About to send FDR Trust data...
+02:19:43.381    <Info> Sending FDR Trust data now...
+02:19:43.382    <Info> Done sending FDR Trust Data
+02:19:43.391 <Verbose> Checkpoint completed id: 0x616 (unknown) result=0
+02:19:43.394 <Verbose> Checkpoint started   id: 0x617 (unknown)
+02:19:43.396 <Verbose> Checkpoint completed id: 0x617 (unknown) result=0
+02:19:43.399 <Verbose> Checkpoint started   id: 0x618 (unknown)
+02:19:43.402 <Verbose> Checkpoint completed id: 0x618 (unknown) result=0
+02:19:43.404 <Verbose> Checkpoint started   id: 0x619 (unknown)
+02:19:43.407 <Verbose> Checkpoint completed id: 0x619 (unknown) result=0
+02:19:43.409 <Verbose> Checkpoint started   id: 0x61A (unknown)
+02:19:44.402 <Verbose> Checkpoint completed id: 0x61A (unknown) result=0
+02:19:44.402 <Verbose> Checkpoint WARNING id: 0x61A result=0: failed to check for OTA logs: -1
+02:19:44.404 <Verbose> Checkpoint started   id: 0x61B (unknown)
+02:19:46.399 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:19:46.402 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:19:46.444 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:19:46.566 <Verbose> Checkpoint completed id: 0x61B (unknown) result=0
+02:19:46.573 <Verbose> Checkpoint started   id: 0x661 (unknown)
+02:19:46.581 <Verbose> Checkpoint completed id: 0x661 (unknown) result=0
+02:19:46.587 <Verbose> Checkpoint started   id: 0x61D (unknown)
+02:19:46.591    <Info> Unmounting filesystems (29)
+02:19:46.594    <Info> Unmounting filesystems (29)
+02:19:46.602 <Verbose> Checkpoint completed id: 0x61D (unknown) result=0
+02:19:46.606 <Verbose> Checkpoint started   id: 0x64E (unknown)
+02:19:47.137 <Verbose> Checkpoint completed id: 0x64E (unknown) result=0
+02:19:47.145 <Verbose> Checkpoint started   id: 0x653 (unknown)
+02:19:47.413 <Verbose> Checkpoint completed id: 0x653 (unknown) result=0
+02:19:47.415 <Verbose> Checkpoint started   id: 0x61F (unknown)
+02:19:47.442 <Verbose> Checkpoint completed id: 0x61F (unknown) result=0
+02:19:47.444 <Verbose> Checkpoint started   id: 0x621 (unknown)
+02:19:47.445    <Info> Creating partition map (11)
+02:19:47.497 <Verbose> Checkpoint completed id: 0x621 (unknown) result=0
+02:19:47.499 <Verbose> Checkpoint started   id: 0x660 (unknown)
+02:19:47.501 <Verbose> Checkpoint completed id: 0x660 (unknown) result=0
+02:19:47.504 <Verbose> Checkpoint started   id: 0x622 (unknown)
+02:19:47.508 <Verbose> Checkpoint completed id: 0x622 (unknown) result=0
+02:19:47.511 <Verbose> Checkpoint started   id: 0x65D (unknown)
+02:19:47.513 <Verbose> Checkpoint completed id: 0x65D (unknown) result=0
+02:19:47.515 <Verbose> Checkpoint started   id: 0x658 (unknown)
+02:19:47.519    <Info> Creating filesystem (12)
+02:19:48.962 <Verbose> Checkpoint completed id: 0x658 (unknown) result=0
+02:19:48.964 <Verbose> Checkpoint started   id: 0x100000659 (unknown)
+02:19:48.969 <Verbose> Checkpoint completed id: 0x100000659 (unknown) result=0
+02:19:48.971 <Verbose> Checkpoint started   id: 0x65F (unknown)
+02:19:52.420 <Verbose> Checkpoint completed id: 0x65F (unknown) result=0
+02:19:52.422 <Verbose> Checkpoint started   id: 0x100000662 (unknown)
+02:19:52.424 <Verbose> Checkpoint completed id: 0x100000662 (unknown) result=0
+02:19:52.427 <Verbose> Checkpoint started   id: 0x10000065A (unknown)
+02:19:52.429 <Verbose> Checkpoint completed id: 0x10000065A (unknown) result=0
+02:19:52.431 <Verbose> Checkpoint started   id: 0x10000065B (unknown)
+02:19:52.551    <Info> About to send filesystem...
+02:19:52.551 <Verbose> Connecting to ASR on port 12345
+02:19:54.558 <Verbose> Retrying connection...
+02:19:54.561    <Info> Connected to ASR
+02:19:54.561    <Info> Validating the filesystem
+02:19:55.870    <Info> Filesystem validated
+02:19:55.870    <Info> Sending filesystem now...
+02:21:35.155    <Info> Done sending filesystem
+02:21:36.893    <Info> Verifying restore (14)
+02:22:12.094 <Verbose> Checkpoint completed id: 0x10000065B (unknown) result=0
+02:22:12.096 <Verbose> Checkpoint started   id: 0x100000626 (unknown)
+02:22:12.097    <Info> Checking filesystems (15)
+02:22:19.651    <Info> Checking filesystems (15)
+02:22:19.843    <Info> Mounting filesystems (16)
+02:22:19.869    <Info> Mounting filesystems (16)
+02:22:19.979 <Verbose> Checkpoint completed id: 0x100000626 (unknown) result=0
+02:22:19.981 <Verbose> Checkpoint started   id: 0x627 (unknown)
+02:22:19.985 <Verbose> Checkpoint completed id: 0x627 (unknown) result=0
+02:22:19.989 <Verbose> Checkpoint started   id: 0x100000628 (unknown)
+02:22:19.992 <Verbose> Checkpoint started   id: 0x100000E00 (unknown)
+02:22:19.995    <Info> About to send KernelCache...
+02:22:19.995    <Info> Extracting kernelcache.release.ipad5 (kernelcache.release.ipad5)...
+02:22:20.044    <Info> Personalizing IMG4 component KernelCache...
+02:22:20.045    <Info> Sending KernelCache now...
+02:22:20.622    <Info> Done sending KernelCache
+02:22:20.752    <Info> Installing kernelcache (27)
+02:22:20.799 <Verbose> Checkpoint completed id: 0x100000E00 (unknown) result=0
+02:22:20.801 <Verbose> Checkpoint started   id: 0x100000E01 (unknown)
+02:22:20.814    <Info> About to send DeviceTree...
+02:22:20.814    <Info> Extracting DeviceTree.j96ap.im4p (Firmware/all_flash/DeviceTree.j96ap.im4p)...
+02:22:20.814    <Info> Personalizing IMG4 component DeviceTree...
+02:22:20.814    <Info> Sending DeviceTree now...
+02:22:20.815    <Info> Done sending DeviceTree
+02:22:20.822    <Info> Installing DeviceTree (61)
+02:22:20.826 <Verbose> Checkpoint completed id: 0x100000E01 (unknown) result=0
+02:22:20.828 <Verbose> Checkpoint started   id: 0xE02 (unknown)
+02:22:20.836 <Verbose> Checkpoint completed id: 0xE02 (unknown) result=0
+02:22:20.838 <Verbose> Checkpoint started   id: 0xBD753A9C00000E03 (unknown)
+02:22:20.847 <Verbose> Checkpoint completed id: 0xBD753A9C00000E03 (unknown) result=0
+02:22:20.849 <Verbose> Checkpoint completed id: 0x100000628 (unknown) result=0
+02:22:20.851 <Verbose> Checkpoint started   id: 0x100000652 (unknown)
+02:22:20.854 <Verbose> Checkpoint completed id: 0x100000652 (unknown) result=0
+02:22:20.856 <Verbose> Checkpoint started   id: 0x100000634 (unknown)
+02:22:20.905 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:20.907 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:20.909 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:22:20.958 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:20.960 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:20.968 <Verbose> ReverseProxy[Conn]: (status=5) Connected to gg.apple.com:443
+02:22:22.968 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:22.974 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:22.993 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:22:23.006 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:23.009 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:23.017 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:22:24.524 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:24.526 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:24.528 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:22:24.537 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:24.539 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:24.543 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:22:26.597 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:26.601 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:26.606 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:22:26.636 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:26.639 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:26.645 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:22:28.423 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:28.425 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:28.426 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:22:28.435 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:28.437 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:28.441 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:22:30.491 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:30.494 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:30.499 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:22:30.529 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:30.532 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:30.539 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:22:32.144 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:32.146 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:32.148 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:22:32.157 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:32.158 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:32.163 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:22:34.345 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:34.349 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:34.354 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:22:34.384 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:34.387 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:34.394 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:22:35.920 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:35.923 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:35.928 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:22:35.947 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:35.949 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:35.954 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:22:37.686 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:37.689 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:37.694 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:22:37.724 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:37.727 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:37.734 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:22:39.652 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:39.655 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:39.656 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:22:39.665 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:22:39.667 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:22:39.672 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:22:41.895 <Verbose> Checkpoint completed id: 0x100000634 (unknown) result=0
+02:22:41.905 <Verbose> Checkpoint started   id: 0x100000635 (unknown)
+02:22:41.917 <Verbose> Checkpoint started   id: 0x100001300 (unknown)
+02:22:41.924    <Info> Flashing firmware (18)
+02:22:42.664 <Verbose> Checkpoint completed id: 0x100001300 (unknown) result=0
+02:22:42.669 <Verbose> Checkpoint started   id: 0x100001301 (unknown)
+02:22:42.671    <Info> Updating gas gauge software (47)
+02:22:42.676 <Verbose> Checkpoint completed id: 0x100001301 (unknown) result=0
+02:22:42.681 <Verbose> Checkpoint started   id: 0x1302 (unknown)
+02:22:42.683    <Info> Updating gas gauge software (47)
+02:22:42.690 <Verbose> Checkpoint completed id: 0x1302 (unknown) result=0
+02:22:42.695 <Verbose> Checkpoint started   id: 0x100001304 (unknown)
+02:22:42.697    <Info> Updating Stockholm (55)
+02:22:51.970 <Verbose> Checkpoint completed id: 0x100001304 (unknown) result=0
+02:22:51.978 <Verbose> Checkpoint started   id: 0x10000130C (unknown)
+02:22:51.984    <Info> About to send FUDImageData...
+02:22:51.984    <Info> Sending IsFUDFirmware now...
+02:22:51.984    <Info> Done sending IsFUDFirmware
+02:22:51.993 <Verbose> Checkpoint completed id: 0x10000130C (unknown) result=0
+02:22:52.001 <Verbose> Checkpoint started   id: 0x100001305 (unknown)
+02:22:52.040 <Verbose> Checkpoint completed id: 0x100001305 (unknown) result=0
+02:22:52.049 <Verbose> Checkpoint started   id: 0x1306 (unknown)
+02:22:52.062 <Verbose> Checkpoint completed id: 0x1306 (unknown) result=0
+02:22:52.069 <Verbose> Checkpoint started   id: 0x1307 (unknown)
+02:22:52.077 <Verbose> Checkpoint completed id: 0x1307 (unknown) result=0
+02:22:52.084 <Verbose> Checkpoint started   id: 0x100001308 (unknown)
+02:22:52.093 <Verbose> Checkpoint completed id: 0x100001308 (unknown) result=0
+02:22:52.099 <Verbose> Checkpoint started   id: 0x130E (unknown)
+02:22:52.111 <Verbose> Checkpoint completed id: 0x130E (unknown) result=0
+02:22:52.117 <Verbose> Checkpoint started   id: 0x10000130F (unknown)
+02:22:52.127 <Verbose> Checkpoint completed id: 0x10000130F (unknown) result=0
+02:22:52.134 <Verbose> Checkpoint started   id: 0x10000130A (unknown)
+02:22:52.135    <Info> About to send FUDImageData...
+02:22:52.135    <Info> Sending IsFUDFirmware now...
+02:22:52.135    <Info> Done sending IsFUDFirmware
+02:22:52.144 <Verbose> Checkpoint completed id: 0x10000130A (unknown) result=0
+02:22:52.150 <Verbose> Checkpoint started   id: 0x10000130B (unknown)
+02:22:52.162 <Verbose> Checkpoint completed id: 0x10000130B (unknown) result=0
+02:22:52.166 <Verbose> Checkpoint started   id: 0x100001303 (unknown)
+02:22:52.174 <Verbose> Checkpoint completed id: 0x100001303 (unknown) result=0
+02:22:52.179 <Verbose> Checkpoint started   id: 0x1309 (unknown)
+02:22:52.181    <Info> Updating SE Firmware (59)
+02:22:52.465 <Verbose> Checkpoint completed id: 0x1309 (unknown) result=0
+02:22:52.475 <Verbose> Checkpoint started   id: 0x10000130D (unknown)
+02:22:52.498 <Verbose> Checkpoint completed id: 0x10000130D (unknown) result=0
+02:22:52.508 <Verbose> Checkpoint completed id: 0x100000635 (unknown) result=0
+02:22:52.518 <Verbose> Checkpoint started   id: 0x663 (unknown)
+02:22:52.529 <Verbose> Checkpoint completed id: 0x663 (unknown) result=0
+02:22:52.539 <Verbose> Checkpoint started   id: 0x10000064D (unknown)
+02:22:52.546 <Verbose> Checkpoint started   id: 0x100000F00 (unknown)
+02:22:52.550    <Info> Fixing up /var (17)
+02:22:52.779 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 6715 / in: 8571)
+02:22:53.497 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:22:53.699    <Info> Creating system key bag (50)
+02:22:54.473 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 1122 / in: 2144)
+02:22:54.507 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:22:56.524 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 9695 / in: 5960)
+02:22:57.547 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:22:58.460 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 1113 / in: 2144)
+02:22:58.460 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:22:59.862 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 9677 / in: 51072)
+02:23:00.582 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:23:02.269 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 1113 / in: 2144)
+02:23:02.282 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:23:03.948 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 9677 / in: 19864)
+02:23:04.364 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:23:05.832 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 1113 / in: 2144)
+02:23:05.945 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:23:07.647 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 9677 / in: 4352)
+02:23:08.064 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:23:09.559 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 1122 / in: 2144)
+02:23:10.179 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:23:11.782 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 9695 / in: 7665)
+02:23:12.197 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:00.788 <Verbose> Checkpoint completed id: 0x100000F00 (unknown) result=0
+02:24:00.791 <Verbose> Checkpoint started   id: 0x100000F01 (unknown)
+02:24:00.794 <Verbose> Checkpoint completed id: 0x100000F01 (unknown) result=0
+02:24:00.796 <Verbose> Checkpoint started   id: 0x100000F06 (unknown)
+02:24:00.799 <Verbose> Checkpoint completed id: 0x100000F06 (unknown) result=0
+02:24:00.801 <Verbose> Checkpoint started   id: 0x100000F03 (unknown)
+02:24:00.823 <Verbose> Checkpoint completed id: 0x100000F03 (unknown) result=0
+02:24:00.825 <Verbose> Checkpoint started   id: 0xBD753A9C00000F04 (unknown)
+02:24:00.832 <Verbose> Checkpoint completed id: 0xBD753A9C00000F04 (unknown) result=0
+02:24:00.834 <Verbose> Checkpoint completed id: 0x10000064D (unknown) result=0
+02:24:00.837 <Verbose> Checkpoint started   id: 0x100000664 (unknown)
+02:24:00.839 <Verbose> Checkpoint completed id: 0x100000664 (unknown) result=0
+02:24:00.842 <Verbose> Checkpoint started   id: 0x63B (unknown)
+02:24:00.844 <Verbose> Checkpoint completed id: 0x63B (unknown) result=0
+02:24:00.847 <Verbose> Checkpoint started   id: 0x100000639 (unknown)
+02:24:00.848    <Info> Modifying persistent boot-args (25)
+02:24:00.866 <Verbose> Checkpoint completed id: 0x100000639 (unknown) result=0
+02:24:00.869 <Verbose> Checkpoint started   id: 0x10000065E (unknown)
+02:24:00.872 <Verbose> Checkpoint completed id: 0x10000065E (unknown) result=0
+02:24:00.874 <Verbose> Checkpoint started   id: 0x10000063C (unknown)
+02:24:00.967 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:00.969 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:00.971 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:00.979 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:00.981 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:00.987 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:24:02.234 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:02.236 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:02.238 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:02.247 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:02.248 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:02.252 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:24:04.334 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:04.338 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:04.342 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:04.372 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:04.375 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:04.382 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:24:05.452 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:05.457 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:05.460 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:05.468 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:05.469 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:05.473 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:24:08.150 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:08.153 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:08.169 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:08.169 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:08.171 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:08.177 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:24:09.601 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:09.603 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:09.605 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:09.614 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:09.615 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:09.619 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:24:11.377 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:11.380 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:11.385 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:11.416 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:11.419 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:11.426 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:24:12.831 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:12.833 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:12.836 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:12.844 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:12.845 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:12.849 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:24:14.644 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:14.647 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:14.651 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:14.682 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:14.684 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:14.691 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:24:16.462 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:16.464 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:16.466 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:16.475 <Verbose> ReverseProxy[Ctrl]: (status=3) Connect Request
+02:24:16.476 <Verbose> ReverseProxy[Conn]: (status=1) Ready
+02:24:16.482 <Verbose> ReverseProxy[Conn]: (status=5) Connected to skl.apple.com:443
+02:24:18.451 <Verbose> Checkpoint completed id: 0x10000063C (unknown) result=0
+02:24:18.453 <Verbose> Checkpoint started   id: 0x668 (unknown)
+02:24:18.456 <Verbose> Checkpoint started   id: 0x1501 (unknown)
+02:24:18.459 <Verbose> Checkpoint completed id: 0x1501 (unknown) result=0
+02:24:18.462 <Verbose> Checkpoint started   id: 0x100001500 (unknown)
+02:24:18.465 <Verbose> Checkpoint completed id: 0x100001500 (unknown) result=0
+02:24:18.468 <Verbose> Checkpoint completed id: 0x668 (unknown) result=0
+02:24:18.471 <Verbose> Checkpoint started   id: 0x10000063D (unknown)
+02:24:18.473 <Verbose> Checkpoint completed id: 0x10000063D (unknown) result=0
+02:24:18.475 <Verbose> Checkpoint started   id: 0x63F (unknown)
+02:24:18.478 <Verbose> Checkpoint completed id: 0x63F (unknown) result=0
+02:24:18.480 <Verbose> Checkpoint started   id: 0x100000640 (unknown)
+02:24:18.514 <Verbose> Checkpoint completed id: 0x100000640 (unknown) result=0
+02:24:18.516 <Verbose> Checkpoint started   id: 0x669 (unknown)
+02:24:18.528 <Verbose> Checkpoint completed id: 0x669 (unknown) result=0
+02:24:18.530 <Verbose> Checkpoint started   id: 0x100000100000642 (unknown)
+02:24:18.532    <Info> Unmounting filesystems (29)
+02:24:18.536    <Info> Unmounting filesystems (29)
+02:24:18.577 <Verbose> Checkpoint completed id: 0x100000100000642 (unknown) result=0
+02:24:18.579 <Verbose> Checkpoint started   id: 0x647 (unknown)
+02:24:18.582 <Verbose> Checkpoint completed id: 0x647 (unknown) result=0
+02:24:18.584 <Verbose> Checkpoint started   id: 0x648 (unknown)
+02:24:18.584    <Info> Got status message
+02:24:18.584    <Info> Status: Restore Finished
+02:24:18.641 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 1091 / in: 2113)
+02:24:18.641 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:18.642 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 9646 / in: 4319)
+02:24:18.642 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:18.642 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 1082 / in: 2113)
+02:24:18.642 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:18.643 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 9646 / in: 19833)
+02:24:18.643 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:18.643 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 1082 / in: 2113)
+02:24:18.644 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:18.645 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 9646 / in: 51039)
+02:24:18.645 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:18.646 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 9664 / in: 5931)
+02:24:18.646 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:18.707 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 9664 / in: 7634)
+02:24:18.707 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:18.709 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 1082 / in: 2113)
+02:24:18.709 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:18.732 <Verbose> ReverseProxy[Conn]: (status=6) Disconnected (out: 1091 / in: 2113)
+02:24:18.733 <Verbose> ReverseProxy[Conn]: (status=2) Terminated
+02:24:19.477 <Verbose> ReverseProxy[Ctrl]: (status=2) Terminated
+02:24:19.478    <Info> DONE

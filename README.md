@@ -4,8 +4,10 @@
 
 However, I've tried to restore to iOS 11.4 from iOS 15.8.8 on my iPad mini 4 Wi-Fi, and confirmed everything works fine, including password, Touch ID, and sleep. If you followed this instruction properly, you should also be able to restore arbitrary version that you have a valid SHSH (also, a generator).
 
+And, everything before overwriting ART should be read only and won't compromise your data and device.
+
 ## Part I Exploit SEP and Obtain ART Key
-1. Put your device in DFU mode, and use palera1n or checkra1n to start this PongoOS image.
+1. Put your device in DFU mode, and use palera1n or checkra1n to start [this](https://github.com/feiyehua/atera1n-PongoOS) PongoOS image. You can build yourself, or use the image build by Github Action.
 
 2. Type `sep shc` in pongoterm. Something like this will appear on pongoterm: 
 ```
@@ -26,7 +28,8 @@ However, I've tried to restore to iOS 11.4 from iOS 15.8.8 on my iPad mini 4 Wi-
 0x0
 0x0
 ```
-Save these bytes as a binary file. 
+Save these bytes as a binary file. `scripts/hex_to_bin.py` should help you. The file should have 448 bytes.
+
 3. Reboot your device into DFU and boot PongoOS once again. Enter pongoterm on your computer.
 
 4. Type `/send /absolute/path/to/previously/saved/binary.bin`, then type `scp replay 470000`. The argument is the number of tick that the first race overwrite starts. Empirically 470000 works on my iPad mini 4. If this doesn't work, SEP will panic. You can also run `sep observe` to see when does the `observed_value` change. Take this as an example:
@@ -66,6 +69,8 @@ You should choose a tick between the 2rd and the 3rd.
 If that works, `sep pwned with opcode ab` will appear in pongoterm. Now you have code execution on SEP.
 ![alt text](images/image.png)
 
+On some old device such as iOS 11.4 that I restored to, PongoOS cannot automatically detect your onboard SEPOS firmware. This is because iBEC before iOS 13 only allocates the SEP firmware buffer, but they doesn't copy the image to this area. You may need to enter the Ramdisk to extract your on board SEPOS firmware.
+
 5. Send SEP payload. Type `/send /absolute/path/to/payload.bin`, then `sep load`. 
 
 6. Jump to the entrypoint of payload. Run `sep jump 1000`. 
@@ -74,7 +79,7 @@ If that works, `sep pwned with opcode ab` will appear in pongoterm. Now you have
 ![alt text](images/image2.png)
 
 ## Part II Modify ART Stored in Device NVRAM
-1. Clone my modified version of SSHRD, which includes a kernel patch program for iPadOS 15.8.8. If it doesn't work, simple ask your agent to remove the permission bits `p.Bits.KernelOnly` of NVRAM key `com.apple.System.sep.art` and `com.apple.System.boot-nonce` in your kernelcache.
+1. Clone SSHRD, create a ramdisk for iOS 15.8.8, and ask your agent to remove the permission bits `p.Bits.KernelOnly` of NVRAM key `com.apple.System.sep.art` and `com.apple.System.boot-nonce` in your kernelcache.
 
 2. Boot into Ramdisk with SSHRD, and start a ssh connection.
 
@@ -117,7 +122,7 @@ subcounters[0]: 356957
 ```
 Create a backup for it in the case of failing.
 
-5. This is your art in hex format, which is encoded in ASN.1 DER. You can use `python patch_art.py --shsh path/to/shsh --art-hex 123456 --art-key abcdef` to patch it. However this only tested with my ARTs, so if this doesn't work for you, please change it manually. You should only change the manifest hash to your digest hash, and the restore nonce to the SNON in you SHSH. There is a MAC in the back of ART. You should recalculate it with format `mac32 = HMAC-SHA256(Key_ART, body_DER)`. For both way you should verify that the patched DER is legal using `openssl`.
+5. This is your art in hex format, which is encoded in ASN.1 DER. You can use `python scripts/patch_art.py --shsh path/to/shsh --art-hex 123456 --art-key abcdef` to patch it. However this only tested with my ARTs, so if this doesn't work for you, please change it manually. You should only change the manifest hash to your digest hash, and the restore nonce to the SNON in you SHSH. There is a MAC in the back of ART. You should recalculate it with format `mac32 = HMAC-SHA256(Key_ART, body_DER)`. For both way you should verify that the patched DER is legal using `openssl`.
 
 6. Set `com.apple.System.sep.art` to the patched version. Use `nvram "com.apple.System.sep.art=%11%22%33%ef"`. Don't forget the first `%`!
    
@@ -126,7 +131,7 @@ Create a backup for it in the case of failing.
 8. Reboot your device into DFU. Run `irecovery -q` to confirm if your APNonce is correct.
 
 ## Part III Restore Your Device
-1. Build this version of idevicerestore. It's only a simple modification that prevent idevice restore from trying to reboot the device before restoring, and request new APTicket from TSS. And provide your ssh. You should have something like `src/idevicerestore --erase -T "shsh_a142d549489ffeab9a38d3fe285decdf63e6e1e9.der" /path/to/ipsw.ipsw`. 
+1. Build [this](https://github.com/feiyehua/idevicerestore.git) version of idevicerestore. It's only a simple modification that prevent idevice restore from trying to reboot the device before restoring, and request new APTicket from TSS. And provide your ssh. You should have something like `src/idevicerestore --erase -T "shsh_a142d549489ffeab9a38d3fe285decdf63e6e1e9.der" /path/to/ipsw.ipsw`. 
 Note that for my iPad mini 4 Wi-Fi, there is no baseband. If you're using something with a baseband, you may need to use a patched version of futurerestore.
 
 2. Wait for the restore to complete and enjoy your legacy system!
@@ -150,6 +155,14 @@ See the [How It Works](How_it_works.md) file.
 - **DeepSeek**, for writing exploits when ChatGPT rejects me.
 - **ByteDance**, for sponsoring (part of) the tokens as "AI Research and Study".
 - **Apple**, for giving people wonderful tools for us to do wonderful things.
+
+## Sponsor
+Please use Binance Smart Chain:
+
+USDT or USDC
+```
+0x0257b6c939f9dd8db61a92e8d54ff26870cf9ca3
+```
 
 ## License
 
