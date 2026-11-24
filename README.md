@@ -120,8 +120,10 @@ Create a backup for it in the case of failing.
 5. This is your art in hex format, which is encoded in ASN.1 DER. You can use `python patch_art.py --shsh path/to/shsh --art-hex 123456 --art-key abcdef` to patch it. However this only tested with my ARTs, so if this doesn't work for you, please change it manually. You should only change the manifest hash to your digest hash, and the restore nonce to the SNON in you SHSH. There is a MAC in the back of ART. You should recalculate it with format `mac32 = HMAC-SHA256(Key_ART, body_DER)`. For both way you should verify that the patched DER is legal using `openssl`.
 
 6. Set `com.apple.System.sep.art` to the patched version. Use `nvram "com.apple.System.sep.art=%11%22%33%ef"`. Don't forget the first `%`!
+   
+7. Save your change with `nvram -s`.
 
-7. Reboot your device into DFU. Run `irecovery -q` to confirm if your APNonce is correct.
+8. Reboot your device into DFU. Run `irecovery -q` to confirm if your APNonce is correct.
 
 ## Part III Restore Your Device
 1. Build this version of idevicerestore. It's only a simple modification that prevent idevice restore from trying to reboot the device before restoring, and request new APTicket from TSS. And provide your ssh. You should have something like `src/idevicerestore --erase -T "shsh_a142d549489ffeab9a38d3fe285decdf63e6e1e9.der" /path/to/ipsw.ipsw`. 
